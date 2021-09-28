@@ -138,7 +138,7 @@ footer{
 	padding: 20px 23px;
 	color:#fff;
 	text-align: center;
-    width: 100%;
+    min-width: 100%;
     max-width: 992px;;
 
 }
