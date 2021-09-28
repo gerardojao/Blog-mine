@@ -35,3 +35,12 @@ const darkTheme = (darkBtn)=>{
     
 }
 darkTheme(".dark-theme-btn")
+const updateCount = ()=>{
+    fetch("https://api.countapi.xyz/update/gerardo/github/?amount=1")
+        .then(res=>res.json())
+        .then(res=>{
+            count.innerHTML = res.value
+        })
+}
+
+updateCount()

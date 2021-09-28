@@ -238,7 +238,26 @@ footer .rrss a [title]{
     color:crimson;
     transform:scale(1.2)
 }
-
+body{position: relative;}
+.container--aviso{
+    background-color: transparent;
+    width: 390px;
+    height: 10%;
+}
+.counter{
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    bottom:5rem;
+    right:1vw
+}
+.counter b{
+    padding:1rem;
+}
+.counter p{
+    padding:1rem;
+}
 /* blog */
 .blog{
     line-height: 1.5rem;;
@@ -301,6 +320,18 @@ footer .rrss a [title]{
 }
 
 @media screen and (max-width: 430px) {
+    .counter{
+            
+        font-size:12px;
+        bottom:6rem;
+        left:.5vw
+    }
+    .counter b{
+        padding:.5rem;
+    }
+    .counter p{
+        padding:.5rem;
+    }
     .principal h1{
         font-size:1.5rem;
     }
