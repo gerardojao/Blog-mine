@@ -250,7 +250,8 @@ body{position: relative;}
     display: flex;
     align-items: center;
     bottom:5rem;
-    right:1vw
+    right:1vw;
+    font-size:12px;
 }
 .counter b{
     padding:1rem;
