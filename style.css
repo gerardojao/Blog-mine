@@ -85,9 +85,11 @@ html{
     border-bottom-right-radius:10px;
     border-bottom-left-radius:10px;
     transition: all .5s;  
-   visibility: hidden;
-   opacity: 0;
-   
+     
+}
+.submenu{
+    visibility: hidden;
+    opacity: 0;
 }
 
 
@@ -117,14 +119,11 @@ html{
     color:crimson;
    
    }
-   .menu li:hover .menu__li--lista{
- visibility: visible;
- opacity:1;
-}
-.submenu li a{
-    display: flex;
+ 
+.menu__li--lista  li a{
+   display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; 
   
 }
 
@@ -428,6 +427,11 @@ body{position: relative;}
     width: 95%;
         background-color: rgba(116, 113, 113, .9);
       }
+      .logo img{
+        width: 9rem;
+        height:auto;
+         margin-top:10px;
+     }
   }
 
     

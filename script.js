@@ -1,7 +1,15 @@
 const d = document,
 ls= localStorage;
 count = d.getElementById("count"),
-count2 = d.getElementById("count2")
+count2 = d.getElementById("count2"),
+desplegable=d.getElementById("desplegable"),
+submenu=d.getElementById("submenu")
+
+desplegable.addEventListener("click",()=>{
+   submenu.classList.toggle("submenu")
+ 
+   
+ })
 
 
 const darkTheme = (darkBtn)=>{
@@ -27,6 +35,7 @@ const darkTheme = (darkBtn)=>{
             if(themeBtn.textContent===moon)darkMode()
              else lightMode()
         }
+       
      })
 
     d.addEventListener("DOMContentLoaded",()=>{ 
