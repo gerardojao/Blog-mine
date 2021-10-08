@@ -1,7 +1,5 @@
 const d = document,
 ls= localStorage;
-count = d.getElementById("count"),
-count2 = d.getElementById("count2"),
 desplegable=d.getElementById("desplegable"),
 submenu=d.getElementById("submenu")
 
@@ -54,15 +52,7 @@ const updateCount = ()=>{
 
 updateCount()
 
-const updateCount2 = ()=>{
-    fetch("https://api.countapi.xyz/update/blog-frustration/Blog/?amount=1")
-        .then(res=>res.json())
-        .then(res=>{
-            count2.innerHTML = res.value
-        })
-}
 
-updateCount2()
 
 desplegable.addEventListener("click",()=>{
     submenu.classList.toggle("submenu")
