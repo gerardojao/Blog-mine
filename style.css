@@ -75,7 +75,7 @@ html{
    
     flex-direction: column;
     position: absolute;
-    background-color: lightgray;
+    background-color: #2d3436;
     right:10px;
     top:56px;
     text-align:center;
@@ -425,7 +425,7 @@ body{position: relative;}
       }
       .menu__li--lista{
     width: 95%;
-        background-color: rgba(116, 113, 113, .9);
+       
       }
       .logo img{
         width: 9rem;

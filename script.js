@@ -5,11 +5,7 @@ count2 = d.getElementById("count2"),
 desplegable=d.getElementById("desplegable"),
 submenu=d.getElementById("submenu")
 
-desplegable.addEventListener("click",()=>{
-   submenu.classList.toggle("submenu")
  
-   
- })
 
 
 const darkTheme = (darkBtn)=>{
@@ -67,3 +63,9 @@ const updateCount2 = ()=>{
 }
 
 updateCount2()
+
+desplegable.addEventListener("click",()=>{
+    submenu.classList.toggle("submenu")
+  
+    
+  })
