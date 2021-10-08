@@ -1,5 +1,8 @@
 const d = document,
 ls= localStorage;
+count = d.getElementById("count"),
+count2 = d.getElementById("count2")
+
 
 const darkTheme = (darkBtn)=>{
     const themeBtn = d.querySelector(darkBtn),
@@ -35,6 +38,7 @@ const darkTheme = (darkBtn)=>{
     
 }
 darkTheme(".dark-theme-btn")
+
 const updateCount = ()=>{
     fetch("https://api.countapi.xyz/update/gerardo/github/?amount=1")
         .then(res=>res.json())
@@ -44,3 +48,13 @@ const updateCount = ()=>{
 }
 
 updateCount()
+
+const updateCount2 = ()=>{
+    fetch("https://api.countapi.xyz/update/blog-frustration/Blog/?amount=1")
+        .then(res=>res.json())
+        .then(res=>{
+            count2.innerHTML = res.value
+        })
+}
+
+updateCount2()
