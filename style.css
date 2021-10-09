@@ -78,8 +78,8 @@ html{
     background-color: #2d3436;
     right:10px;
     top:56px;
-    text-align:center;
-    width: 240px;
+    text-align:left;;
+    width: 320px;
     padding: 0;
     margin: 0;
     border-bottom-right-radius:10px;
@@ -102,8 +102,8 @@ html{
   border-bottom:1px solid crimson;
   border-left:1px solid crimson;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
  
 }
 .menu__li ul li a{
@@ -113,6 +113,8 @@ html{
    color:#fff;
    font-weight:600;
    transition: all .7s; 
+   justify-content: flex-start;
+   align-items: center;
 }
 .menu__li ul li a:hover{
     opacity: .70;
@@ -124,8 +126,26 @@ html{
    display: flex;
     justify-content: space-around;
     align-items: center; 
+   
   
 }
+.menu__li--lista  li .img-container{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: #f1f1f1;
+border:1px solid crimson;
+display:flex;
+justify-content: center;
+margin-left:1rem;
+object-fit: cover; object-position: center center; overflow:hidden;
+ }
+ .menu__li--lista  li .text{
+   
+    margin-left:1rem;
+       
+     }
+
 
  .principal{
      display:flex;
