@@ -2,7 +2,7 @@ const d = document,
 ls= localStorage;
 desplegable=d.getElementById("desplegable"),
 submenu=d.getElementById("submenu"),
-counter=d.getElementById("counter")
+count=d.getElementById("count")
 
 
 const darkTheme = (darkBtn)=>{
@@ -47,4 +47,13 @@ desplegable.addEventListener("click",()=>{
     submenu.classList.toggle("submenu")
 
 })
+
 /* counter */
+const updateCounter = ()=>{
+    fetch("https://api.countapi.xyz/update/gerardojao.github.io/Blog/?amount=1")
+    .then(res=>res.json())
+    .then(res=>{
+        count.textContent =res.value
+    })
+}
+updateCounter()
