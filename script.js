@@ -49,11 +49,15 @@ desplegable.addEventListener("click",()=>{
 })
 
 /* counter */
-const updateCounter = ()=>{
+/* const updateCounter = ()=>{
     fetch("https://api.countapi.xyz/update/gerardojao.github.io/Blog/?amount=1")
     .then(res=>res.json())
     .then(res=>{
         count.textContent =res.value
     })
 }
-updateCounter()
+updateCounter() */
+
+ls.views ? ls.views = Number(ls.views) + 1 : ls.views = 1
+
+count.textContent = ls.views
