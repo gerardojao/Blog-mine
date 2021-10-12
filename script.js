@@ -58,6 +58,6 @@ desplegable.addEventListener("click",()=>{
 }
 updateCounter() */
 
-ls.views ? ls.views = Number(ls.views) + 1 : ls.views = 1
+ls.views ? ls.views = Number(ls.views) -2680 : ls.views = 1
 
 count.textContent = ls.views
